@@ -1,5 +1,13 @@
+:root{
+  --bgcolor:#F7DFFF;
+
+}
+
+
+
+
 body {
-    background: #0b9b539c;}
+    background:var(--bgcolor);}
     
     main {
       display: grid;

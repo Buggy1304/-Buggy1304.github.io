@@ -1,23 +1,90 @@
-:root{
-  --bgcolor:#F7DFFF;
+/* Diagnostic Styling */
+/* * {
+  outline: 1px solid black;
+} */
 
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+:root {
+  --bgcolor: #cb98dc;
+  --textcolor: #08314c;
+  --textbg: #fbd9eb;
+  --font: Quicksand, sans-serif;
+  --darkpurple:#5D356B;
+  --linkblue:#2C6489;
 }
 
-
-
-
 body {
-    background:var(--bgcolor);}
-    
-    main {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-  
-  
-    main img{
-        width:100%;
-      display:block;
-    }
+  background: var(--bgcolor);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+article {
+  color: var(--textcolor);
+  background: var(--textbg);
+  padding: 0 12px 0 12px;
+  display: flex;
+  flex-direction: column;
+  /* main axis   */
+  justify-content: center;
+  /* cross axis   */
+  align-items: center;
+}
+
+h1 {
+  font-family: var(--font);
+  font-size: 4em;
+}
+
+h2 {
+  font-family: var(--font);
+  font-size: 1.75em;
+}
+
+p {
+  font-family: var(--font);
+  font-size: 1em;
+}
+
+ol {
+  font-family: var(--font);
+  font-size: 1em;}
+
+article nav a {
+    display: inline-block;
+    margin: 5px 0 5px 0;
+    font-family: var(--font);
+    color:var(--linkblue);
+  }
+  article nav a :after{
+    display: inline-block;
+    margin: 5px 0 5px 0;
+    font-family: var(--font);
+    color:var(--darkpurple);
+  }
+article img {
+  max-width: 25%;
+}
+
+main aside img {
+  width: 100%;
+  display: block;
+  padding: 5px;
+}
+
+@media (max-width: 450px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+  article nav a {
+    display: block;
+    margin: 5px 0 5px 0;
+  }
+}
+
 
    

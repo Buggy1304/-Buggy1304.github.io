@@ -60,7 +60,7 @@ article nav a {
     font-family: var(--font);
     color:var(--linkblue);
   }
-  article nav a :after{
+  article nav a :link{
     display: inline-block;
     margin: 5px 0 5px 0;
     font-family: var(--font);
@@ -73,7 +73,7 @@ article img {
 main aside img {
   width: 100%;
   display: block;
-  padding: 5px;
+  padding: 0 5px 0 5px;
 }
 
 @media (max-width: 450px) {
